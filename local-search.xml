@@ -4,13 +4,19 @@
   
   
   <entry>
-    <title>Happy</title>
-    <link href="/2024/10/23/happy/"/>
-    <url>/2024/10/23/happy/</url>
+    <title>My New Post</title>
+    <link href="/2024/10/23/My-New-Post/"/>
+    <url>/2024/10/23/My-New-Post/</url>
     
-    <content type="html"><![CDATA[<p>能够使用hexo了，真开心</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="内卷"><a href="#内卷" class="headerlink" title="内卷"></a>内卷</h2><h3 id="为什么不卷？！"><a href="#为什么不卷？！" class="headerlink" title="为什么不卷？！"></a>为什么不卷？！</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;卷！！！&quot;</span>) <br></code></pre></td></tr></table></figure><h3 id="还不卷？！！"><a href="#还不卷？！！" class="headerlink" title="还不卷？！！"></a>还不卷？！！</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;juan&quot;</span>)<br></code></pre></td></tr></table></figure>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>study</tag>
+      
+    </tags>
     
   </entry>
   
