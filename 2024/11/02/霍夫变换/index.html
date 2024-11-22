@@ -264,13 +264,15 @@ mjx-container[display="true"] {
 mjx-container[display="true"] + br {
   display: none;
 }
-</style></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">Loading...</div></div></div><script>(()=>{
+</style></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="pokeball-loading"><div class="pokeball" id="normal"></div><div class="pokeball" id="great"></div><div class="pokeball" id="ultra"></div><div class="pokeball" id="master"></div><div class="pokeball" id="safari"></div></div></div><script>(() => {
   const $loadingBox = document.getElementById('loading-box')
   const $body = document.body
   const preloader = {
     endLoading: () => {
-      $body.style.overflow = ''
-      $loadingBox.classList.add('loaded')
+      $body.style.overflow = 'auto'
+      setTimeout(() => {
+        $loadingBox.classList.add('loaded')
+      }, 1500) // 延迟2秒后添加'loaded'类
     },
     initLoading: () => {
       $body.style.overflow = 'hidden'
@@ -279,11 +281,11 @@ mjx-container[display="true"] + br {
   }
 
   preloader.initLoading()
-  window.addEventListener('load', preloader.endLoading)
+  window.addEventListener('load', () => { preloader.endLoading() })
 
   if (false) {
-    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
-    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
 })()</script><div id="web_bg" style="background: [object Object];"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/top_img/背景画布1.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">jienan's pages</span></a><a class="nav-page-title" href="/"><span class="site-name">霍夫变换</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">霍夫变换</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-02T14:26:09.000Z" title="Created 2024-11-02 22:26:09">2024-11-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-11-19T12:29:57.828Z" title="Updated 2024-11-19 20:29:57">2024-11-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="理论">理论</h2>
 <h3 id="定义">定义</h3>
