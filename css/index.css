@@ -4256,11 +4256,11 @@ figure.highlight pre .javascript .function {
   right: 0;
 }
 #loading-box.loaded .loading-left-bg {
-  -webkit-transition: all 1s 1.5s;
-  -moz-transition: all 1s 1.5s;
-  -o-transition: all 1s 1.5s;
-  -ms-transition: all 1s 1.5s;
-  transition: all 1s 1.5s;
+  -webkit-transition: all 0.5s 1s;
+  -moz-transition: all 0.5s 1s;
+  -o-transition: all 0.5s 1s;
+  -ms-transition: all 0.5s 1s;
+  transition: all 0.5s 1s;
   -webkit-transform: translate(-100%, 0);
   -moz-transform: translate(-100%, 0);
   -o-transform: translate(-100%, 0);
@@ -4268,11 +4268,11 @@ figure.highlight pre .javascript .function {
   transform: translate(-100%, 0);
 }
 #loading-box.loaded .loading-right-bg {
-  -webkit-transition: all 1s 1.5s;
-  -moz-transition: all 1s 1.5s;
-  -o-transition: all 1s 1.5s;
-  -ms-transition: all 1s 1.5s;
-  transition: all 1s 1.5s;
+  -webkit-transition: all 0.5s 1s;
+  -moz-transition: all 0.5s 1s;
+  -o-transition: all 0.5s 1s;
+  -ms-transition: all 0.5s 1s;
+  transition: all 0.5s 1s;
   -webkit-transform: translate(100%, 0);
   -moz-transform: translate(100%, 0);
   -o-transform: translate(100%, 0);
@@ -4280,11 +4280,11 @@ figure.highlight pre .javascript .function {
   transform: translate(100%, 0);
 }
 #loading-box.loaded .pokeball-loading {
-  -webkit-animation: fadeOut 1s 1s forwards;
-  -moz-animation: fadeOut 1s 1s forwards;
-  -o-animation: fadeOut 1s 1s forwards;
-  -ms-animation: fadeOut 1s 1s forwards;
-  animation: fadeOut 1s 1s forwards;
+  -webkit-animation: fadeOut 1s 0.5s forwards;
+  -moz-animation: fadeOut 1s 0.5s forwards;
+  -o-animation: fadeOut 1s 0.5s forwards;
+  -ms-animation: fadeOut 1s 0.5s forwards;
+  animation: fadeOut 1s 0.5s forwards;
 }
 @-webkit-keyframes rotateBall {
   0% {
