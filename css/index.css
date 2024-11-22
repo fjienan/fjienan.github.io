@@ -4256,11 +4256,11 @@ figure.highlight pre .javascript .function {
   right: 0;
 }
 #loading-box.loaded .loading-left-bg {
-  -webkit-transition: all 0.5s 1s;
-  -moz-transition: all 0.5s 1s;
-  -o-transition: all 0.5s 1s;
-  -ms-transition: all 0.5s 1s;
-  transition: all 0.5s 1s;
+  -webkit-transition: all 0.5s 0.97s;
+  -moz-transition: all 0.5s 0.97s;
+  -o-transition: all 0.5s 0.97s;
+  -ms-transition: all 0.5s 0.97s;
+  transition: all 0.5s 0.97s;
   -webkit-transform: translate(-100%, 0);
   -moz-transform: translate(-100%, 0);
   -o-transform: translate(-100%, 0);
@@ -4268,11 +4268,11 @@ figure.highlight pre .javascript .function {
   transform: translate(-100%, 0);
 }
 #loading-box.loaded .loading-right-bg {
-  -webkit-transition: all 0.5s 1s;
-  -moz-transition: all 0.5s 1s;
-  -o-transition: all 0.5s 1s;
-  -ms-transition: all 0.5s 1s;
-  transition: all 0.5s 1s;
+  -webkit-transition: all 0.5s 0.97s;
+  -moz-transition: all 0.5s 0.97s;
+  -o-transition: all 0.5s 0.97s;
+  -ms-transition: all 0.5s 0.97s;
+  transition: all 0.5s 0.97s;
   -webkit-transform: translate(100%, 0);
   -moz-transform: translate(100%, 0);
   -o-transform: translate(100%, 0);
