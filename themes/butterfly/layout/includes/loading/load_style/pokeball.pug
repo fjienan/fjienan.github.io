@@ -1,0 +1,37 @@
+#loading-box
+  .loading-left-bg
+  .loading-right-bg
+  .pokeball-loading
+    #normal.pokeball
+    #great.pokeball
+    #ultra.pokeball
+    #master.pokeball
+    #safari.pokeball
+
+script.
+  (() => {
+    const $loadingBox = document.getElementById('loading-box')
+    const $body = document.body
+    const preloader = {
+      endLoading: () => {
+        $body.style.overflow = 'auto'
+        setTimeout(() => {
+          $loadingBox.classList.add('loaded')
+        }, 1000) // 延迟2秒后添加'loaded'类
+      },
+      initLoading: () => {
+        $body.style.overflow = 'hidden'
+        $loadingBox.classList.remove('loaded')
+      }
+    }
+
+    preloader.initLoading()
+    window.addEventListener('load', () => { preloader.endLoading() })
+
+    if (!{theme.pjax && theme.pjax.enable}) {
+      document.addEventListener('pjax:send', () => { preloader.initLoading() })
+      document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+    }
+  })()
+
+

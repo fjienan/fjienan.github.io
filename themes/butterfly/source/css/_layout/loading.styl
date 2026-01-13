@@ -1,0 +1,5 @@
+if hexo-config('preloader.enable')
+  if hexo-config('preloader.load_style') == 'pokeball'
+    @import './_load_style/pokeball'
+  else
+    @import 'loading_backup'
