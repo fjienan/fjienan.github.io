@@ -1,0 +1,8 @@
+/* Hide native cursor so the rocket canvas cursor becomes the only cursor.
+ * If you want to keep the native I-beam in inputs, delete the last rule block.
+ */
+
+html, body, * {
+  cursor: none !important;
+}
+
