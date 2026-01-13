@@ -29,7 +29,7 @@
     life: [380, 1100], // ms
     // Colors tuned for "smoke + glow"
     smokeColor: 'rgba(210, 220, 230, 0.55)',
-    emberColor: 'rgba(140, 210, 255, 0.65)'
+    emberColor: 'rgba(255, 136, 136, 0.88)'
   }
 
   const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
@@ -186,7 +186,7 @@
     // Window
     ctx.beginPath()
     ctx.arc(2.5, 0, 2.6, 0, Math.PI * 2)
-    ctx.fillStyle = 'rgba(120, 210, 255, 0.9)'
+    ctx.fillStyle = 'rgba(255, 123, 0, 0.9)'
     ctx.fill()
     ctx.strokeStyle = 'rgba(0, 0, 0, 0.25)'
     ctx.lineWidth = 1
@@ -212,7 +212,7 @@
     // Small nozzle glow
     ctx.beginPath()
     ctx.arc(-10.8, 0, 2.1, 0, Math.PI * 2)
-    ctx.fillStyle = 'rgba(140, 210, 255, 0.65)'
+    ctx.fillStyle = 'rgba(255, 166, 0, 0.66)'
     ctx.fill()
 
     ctx.restore()
